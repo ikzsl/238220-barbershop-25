@@ -1,6 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Муслим Джалалудинов](https://up.htmlacademy.ru/htmlcss/25/user/238220).
+* Наставник: [Татьяна Симоненко](https://up.htmlacademy.ru/htmlcss/25/user/6613).
 
 ---
 

@@ -1,0 +1,17 @@
+.contacts {
+  background-image: url(../img/texture.jpg);
+  background-repeat: repeat;
+  color: black;
+}
+
+.main-header {
+  background-color: black;
+
+  color: white;
+}
+.main-footer {
+  background-image: url(../img/footer-texture.jpg);
+  background-repeat: repeat;
+  color: white;
+}
+

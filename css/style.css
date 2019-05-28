@@ -201,7 +201,7 @@ opacity: 0.2
   background-image:
   url(/img/vertical-line.png),
   url(/img/pattern-light.jpg);
-  background-position: center; 0 0;
+  background-position: center, 0 0;
   background-repeat: no-repeat, repeat;
 }
 

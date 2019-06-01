@@ -47,7 +47,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 
 .inner-page .main-header {
@@ -554,11 +554,58 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 42px;    
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs li::after {
+  position: absolute;
+  content: "";
+  top: 9px;
+  right: -25px;
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  background-color: #000000;
+}
+
+.breadcrumbs-current::after {
+  display: none;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  text-decoration: underline;
 }
 
 .filters {
@@ -571,15 +618,58 @@ input[type="radio"].visually-hidden {
 
 .product-columns {
   display: flex;
-  justify-content: space-between;
+  
+  margin: 0;
 }
 
 .product-photos {
+  margin: 0;
+  margin-right: 90px;
   width: 460px;
 }
 
+.product-photos img{
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
 .product-info {
-  width: 380px;
+  padding-top: 33px; 
+  width: 390px;
+}
+
+.product-info h3 {
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.product-info p {
+  margin: 0;
+}
+
+.product-info ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-info li {
+  position: relative;
+  padding-left: 23px;
+  
+}
+
+.product-info li::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  background-color: #000000;
+  
 }
 
 .product-photo-preview {
@@ -589,4 +679,49 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  
+}
+.product-description {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  margin-bottom: 29px;
+}
+
+.product-description p{
+  width: 200px;
+}
+
+.product-article {
+  color: #aeaeae;
+}
+
+.product-price b{
+  width: 112px;
+  padding-top: 13px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 11px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #e5e5e5;
+  box-sizing: border-box;
+  
+  
+}
+
+.product-price .button{
+  padding-left: 17px;
+  padding-right: 17px;
+  
+}
+
+.product-info .product-text {
+  margin-bottom: 35px;
+  
+}
+
+.product-info .product-price {
+  margin-bottom: 63px;
+  
 }
